@@ -3,6 +3,7 @@ jQuery plugins for Bulma CSS Framework
 
 
 # xModal
+
 ```
 let modal = $.xModal({
   content:"", // HTML or Function or jQuery-object for content of popup bulma-modal
@@ -18,8 +19,10 @@ modal.xModal("deletebutton") -  - returns jQuery-object of cleckable button for 
 modal.xModal("content") - returns jQuery-object of popup content
 modal.xModal("close") - method for closing popup
 ```
+
 # xModalCard
 
+```
 let modal = $.xModalCard({
   title:"", // HTML or Function or jQuery-object for title of popup bulma-modal-card
   content:"", // HTML or Function or jQuery-object for body of popup bulma-modal-card
@@ -43,5 +46,5 @@ modal.xModalCard("disable") - method for disable popup (add .is-boxloading for c
 modal.xModalCard("enable") - method for enable popup (remove .is-boxloading for card)
 modal.xModalCard("disabled") - method for check if disabled (check .is-boxloading for card) popup
 modal.xModal("close") - method for closing popup
-
+```
 
