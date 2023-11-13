@@ -36,11 +36,16 @@
                     break;
                 }
                 case "close":{
-                    let options = this.data("options");
-                    if(options.onclose && typeof(options.onclose)==="function") {
-                        options.onclose(this);
+                    if(!this.xModal("options").noclose) {
+                        if(this.xModal("options").onclose && typeof(this.xModal("options").onclose)==="function") {
+                            this.xModal("options").onclose(this);
+                        }
+                        this.remove();
                     }
-                    this.remove();
+                    break;
+                }
+                default:{
+                    return false;
                     break;
                 }
             }
@@ -147,10 +152,9 @@
                     break;
                 }
                 case "close":{
-                    if(!this.xModalCard("disabled")) {
-                        let options = this.data("options");
-                        if(options.onclose && typeof(options.onclose)==="function") {
-                            options.onclose(this);
+                    if(!this.xModalCard("disabled") && !this.xModalCard("options").noclose) {
+                        if(this.xModalCard("options").onclose && typeof(this.xModalCard("options").onclose)==="function") {
+                            this.xModalCard("options").onclose(this);
                         }
                         this.remove();
                     }
