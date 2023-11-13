@@ -1,4 +1,14 @@
 /**
+ * jQuery plugins for Bulma CSS Framework v1.0.1
+ * By: Dmitry A Karasev
+ *
+ * https://github.com/articks/jquery-bulma
+ *
+ * Copyright 2023 Dmitry A Karasev
+ * You may use this project under MIT license.
+ */
+
+/**
  * xModal
  */
 (function($){
