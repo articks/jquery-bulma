@@ -1,5 +1,5 @@
 # jquery-bulma
-jQuery plugins for Bulma CSS Framework
+jQuery plugins for Bulma CSS Framework (very simple)
 
 
 # xModal
