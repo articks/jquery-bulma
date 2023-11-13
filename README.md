@@ -3,7 +3,7 @@ jQuery plugins for Bulma CSS Framework
 
 
 # xModal
-
+```
 let modal = $.xModal({
   content:"", // HTML or Function or jQuery-object for content of popup bulma-modal
   onshow:function(modal){ }, // onShow-method
@@ -17,7 +17,7 @@ modal.xModal("deletebackground") - returns jQuery-object of cleckable background
 modal.xModal("deletebutton") -  - returns jQuery-object of cleckable button for closing popup
 modal.xModal("content") - returns jQuery-object of popup content
 modal.xModal("close") - method for closing popup
-
+```
 # xModalCard
 
 let modal = $.xModalCard({
