@@ -44,6 +44,13 @@
                     }
                     break;
                 }
+                case "forcedclose":{
+                    if(this.xModal("options").onclose && typeof(this.xModal("options").onclose)==="function") {
+                        this.xModal("options").onclose(this);
+                    }
+                    this.remove();
+                    break;
+                }
                 default:{
                     return false;
                     break;
@@ -141,10 +148,12 @@
                 }
                 case "disable":{
                     this.xModalCard("card").addClass("is-boxloading");
+                    return this;
                     break;
                 }
                 case "enable":{
                     this.xModalCard("card").removeClass("is-boxloading");
+                    return this;
                     break;
                 }
                 case "disabled":{
@@ -158,6 +167,17 @@
                         }
                         this.remove();
                     }
+                    break;
+                }
+                case "forcedclose":{
+                    if(this.xModalCard("options").onclose && typeof(this.xModalCard("options").onclose)==="function") {
+                        this.xModalCard("options").onclose(this);
+                    }
+                    this.remove();
+                    break;
+                }
+                default:{
+                    return false;
                     break;
                 }
             }
