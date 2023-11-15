@@ -18,6 +18,7 @@ modal.xModal("deletebackground") - returns jQuery-object of cleckable background
 modal.xModal("deletebutton") -  - returns jQuery-object of cleckable button for closing popup
 modal.xModal("content") - returns jQuery-object of popup content
 modal.xModal("close") - method for closing popup
+modal.xModal("forcedclose") - method for closing popup
 ```
 
 # xModalCard
@@ -46,5 +47,6 @@ modal.xModalCard("disable") - method for disable popup (add .is-boxloading for c
 modal.xModalCard("enable") - method for enable popup (remove .is-boxloading for card)
 modal.xModalCard("disabled") - method for check if disabled (check .is-boxloading for card) popup
 modal.xModal("close") - method for closing popup
+modal.xModal("forcedclose") - method for closing popup
 ```
 
